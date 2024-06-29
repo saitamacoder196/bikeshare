@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+bikeshare_env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files
+*.csv
+
+# Logs
+*.log
+
+# MacOS/Linux system files
+.DS_Store
