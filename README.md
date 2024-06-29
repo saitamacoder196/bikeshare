@@ -7,6 +7,7 @@ This project uses Python to explore bikeshare data from three major cities in th
 - Python 3
 - pandas
 - NumPy
+- Streamlit
 
 ## Installation Guide
 
@@ -42,18 +43,27 @@ After activation, your terminal prompt will change to indicate that the virtual 
 ### Step 3: Install the Required Packages
 With the virtual environment active, you can now install the necessary packages using the `requirements.txt` file.
 
+Create a file named `requirements.txt` with the following content:
+```plaintext
+pandas
+numpy
+streamlit
+```
+
 Install the packages by running:
    ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage Instructions
+
+### CLI Application
 1. Ensure that you have installed all the necessary libraries.
 2. Place the data files `chicago.csv`, `new_york_city.csv`, and `washington.csv` in the same directory as the `bikeshare.py` file.
 3. Run the `bikeshare.py` file using the command: `python bikeshare.py`.
 4. Follow the instructions in the terminal to view descriptive statistics and raw data.
 
-### Example
+#### Example
 Below is an example of a session with the application:
 
 ```plaintext
@@ -111,3 +121,10 @@ Would you like to see 5 lines of raw data? Enter yes or no: no
 
 Would you like to restart? Enter yes or no.
 ```
+
+### Streamlit Web Application
+1. Run the Streamlit application using the command:
+   ```bash
+   streamlit run bikeshare_app.py
+   ```
+2. Open your web browser and go to the URL provided by Streamlit to use the application.
